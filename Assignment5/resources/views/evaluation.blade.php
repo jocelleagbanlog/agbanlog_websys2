@@ -10,7 +10,7 @@
 
     <form method="GET" action="/evaluation">
         <strong>Student Name:</strong>
-        <input type="text" name="name" value={{$name}}> <br><br>
+        <input type="text" name="name" value="{{ request('name') }}"> <br><br>
         <strong>Prelim Grade:</strong>
         <input type="number" name="prelim" value={{$prelim}}> <br><br>
         <strong>Midterm Grade:</strong>

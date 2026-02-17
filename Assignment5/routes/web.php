@@ -7,10 +7,10 @@ Route::get('/', function () {
 });
 
 Route::get('/evaluation', function (){
-    $name = request('name');
-    $prelim = request('prelim');
-    $midterm = request('midterm');
-    $final = request('final');
+    $name = request()->get('name');
+    $prelim = request()->get('prelim');
+    $midterm = request()->get('midterm');
+    $final = request()->get('final');
 
     $average = null;
     $letter = null;
