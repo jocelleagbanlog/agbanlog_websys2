@@ -28,9 +28,40 @@
     <h3>Evaluation Result</h3>
 
     <p><strong>Average: </strong>{{number_format($average,2)}}</p>
-    <p><strong>Letter Grade: </strong>{{$letter}}</p>
-    <p><strong>Remarks: </strong>{{$remarks}}</p>
-    <p><strong>Award: </strong>{{$award}}</p>
+    
+    <p><strong>Letter Grade: </strong>
+        @if($average >= 90) 
+            A
+        @elseif ($average >= 80)
+            B
+        @elseif ($average >= 70)
+            C
+        @elseif ($average >= 60)
+            D
+        @else
+            F
+        @endif
+    </p>
+
+    <p><strong>Remarks: </strong>
+        @if ($average >= 75)
+            Passed
+        @else
+            Failed
+        @endif
+    </p>
+
+    <p><strong>Award: </strong>
+        @if($average >= 98) 
+            With Highest Honors
+        @elseif($average >= 95) 
+            With High Honors
+        @elseif($average >= 90) 
+            With Honors
+        @else 
+            No Award
+        @endif
+    </p>
 
     @endif
 </body>
