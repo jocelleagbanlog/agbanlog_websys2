@@ -16,7 +16,6 @@ Route::get('/evaluation', function (Request $request) {
 
     $average = null;
 
-    // Only calculate if all inputs are present
     if ($name && $prelim !== null && $midterm !== null && $final !== null) {
         $average = ($prelim + $midterm + $final) / 3;
     }
