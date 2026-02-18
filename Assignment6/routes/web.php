@@ -6,8 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// no controller
-
 // problem 1
 Route::get('/student/{id}/{name}', function ($id, $name){
     return view('student', [
