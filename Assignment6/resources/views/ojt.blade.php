@@ -6,7 +6,6 @@
     <title>Problem 3</title>
 </head>
 <body>
-    <!-- no controller -->
     <h2>OJT Company Infromation Page</h2>
 
     <p><strong>Company Name: </strong>{{ $company }}</p>

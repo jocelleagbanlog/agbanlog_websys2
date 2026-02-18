@@ -6,7 +6,6 @@
     <title>Problem 4</title>
 </head>
 <body>
-    <!-- no controller -->
     <h2>Event Registration Page</h2>
 
     <p><strong>Event Name: </strong>{{ $event }}</p>

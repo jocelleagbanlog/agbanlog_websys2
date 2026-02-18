@@ -6,7 +6,6 @@
     <title>Problem 1</title>
 </head>
 <body>
-    <!-- no controller -->
     <h2>Student Profile Page</h2>
 
     <p><strong>Student ID: </strong>{{ $id }}</p>
